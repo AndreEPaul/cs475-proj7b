@@ -6,4 +6,7 @@
 * Multithreaded for-loops using openMP.
 * Single instruction multiple data approach.
 * These same approaches ran on a GPU using openCL.
-* Uses a bash script to run multiple tests. (TODO: some weird conversion happened with my script; fix this)
+* Uses a bash script to run multiple tests. 
+
+###### (TODO: some weird conversion happened with my script; fix this)
+###### (TODO: insert the graphs from the results of these tests)
