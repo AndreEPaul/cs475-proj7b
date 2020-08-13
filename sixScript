@@ -1,0 +1,14 @@
+#!/bin/bash
+# different trial sizes:
+# (just keeping this the same for now)
+
+# local size:
+for t in 8 16 32 64 128 256 512
+do
+  # global size:
+  for s in 1024 2048 4096 65536 262144 1048576 4194304 8388608
+  do
+    g++ -DNUM_ELEMENTS=$s -DLOCAL_SIZE=$t -o first first.cpp /usr/local/apps/cuda/cuda-10.1/lib64/libOpenCL.so.1.1 -w -lm -fopenmp
+    ./first
+  done
+done
