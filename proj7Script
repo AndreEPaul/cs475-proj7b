@@ -14,7 +14,7 @@ do
   # global size:
   for s in 1024 2048 4096 65536 262144 1048576 4194304 8388608
   do
-    g++ -DNUM_ELEMENTS=$s -DLOCAL_SIZE=$t -o first first.cpp /usr/local/apps    /cuda/cuda-10.1/lib64/libOpenCL.so.1.1 -w -lm -fopenmp
-    ./first
+    g++ -DNUM_ELEMENTS=$s -DLOCAL_SIZE=$t -o finalProj main.cpp /usr/local/apps    /cuda/cuda-10.1/lib64/libOpenCL.so.1.1 -w -lm -fopenmp
+    ./finalProj
   done
 done
